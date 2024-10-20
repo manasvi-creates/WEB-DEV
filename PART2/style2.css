@@ -18,7 +18,10 @@ h1,h3{
     color:white;
 }
 /*descendant selector*/
-/* p a{
+p a{
     color:purple;
     background-color: yellow;
-} */
+}
+p + h3{
+    text-decoration: underline;
+}
