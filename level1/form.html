@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/action">
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Enter your name" id="username" name ="username"/>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" placeholder ="Enter password" id="password" />
+    </div> 
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Age" id="age">
+    </div>  
+     <button type="submit">Submit</button>
+     <!-- <button type="button">hello</button>
+     <button type="reset">reset</button>
+     <br/>
+     <input type="button" value="click me"/>
+     <input type="submit" /> -->
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="search in Google" name="q">
+        <button>search</button>
+    </form>
+    <hr>
+    
+    <form action="/server">
+    <div>
+        Choose your subjects:
+        <input type="checkbox" id="Math" name="subject"/>
+        <label for="Math">Math</label>
+        <input type="checkbox" id="English" name="subject"/>
+        <label for="English">English</label>
+        <input type="checkbox" id="Hindi" name="subject"/>
+        <label for="Hindi">Hindi</label>
+    </div>
+    <hr>
+    <div>
+        <input type="radio" name="fruit" id ="apple" value="apple">
+        <label for="apple">Apple</label>  
+        <input type="radio" name="fruit" id ="Mango" value="mango">
+        <label for="Mango">Mango</label>  
+        <input type="radio" name="fruit" id ="Banana" value="banana">
+        <label for="Banana">Banana</label>  
+        <input type="radio" name="fruit" id ="Litchie" value="litchie">
+        <label for="Litchie">Litchie</label>  
+        <button type="submit">submit</button>
+    </div>
+    <hr>
+    <div>
+        Choose your professsion
+        <select name="profession" id="profession">
+            <option>Select your option</option>
+            <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+        </select>
+    </div>
+    <label for="vol">Select your volume level </label>
+    <input type="range" id="vol" min="0" max="100" name="vol"step="10" value="0">
+   
+    <hr>
+    <label for="feedback">Please give your valuable feedback</label>
+    <textarea id="feedback" name="feedback" placeholder="Write your feedback"></textarea>
+    <button type="submit">submit</button>
+</form>
+
+    
+</body>
+</html>

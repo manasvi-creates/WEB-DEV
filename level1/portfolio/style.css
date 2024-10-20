@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #5f5d5d;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.home-section {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+.about-section,
+.portfolio-section,
+.resume-section,
+.contact-section {
+    background-color: #fff;
+    color: #333;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    margin: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
