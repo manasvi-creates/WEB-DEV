@@ -22,6 +22,12 @@ p a{
     color:purple;
     background-color: yellow;
 }
+/* adjacent sibling combinator */
 p + h3{
     text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+    color:darkblue;
 }
