@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('th.jpeg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+    background-position: center; /* Centers the image */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d28db8;
+}
+
+.logo h1 {
+    color: #eadfe5;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: rgb(245, 240, 244);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.home-section {
+    text-align: center;
+    padding: 50px;
+    background-image: url('../images/home-background.jpg'); /* Path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* Adjust the text color for better readability */
+}
+
+.product-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fabbe2;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-section {
+    padding: 50px;
+    background-color: #d8a5d8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #1b1717;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #3e3731;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

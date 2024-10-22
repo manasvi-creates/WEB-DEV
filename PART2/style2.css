@@ -31,3 +31,6 @@ p + h3{
     background-color: cornflowerblue;
     color:darkblue;
 }
+div > input{
+    background-color:darkgray;
+}
