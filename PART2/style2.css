@@ -31,6 +31,21 @@ p + h3{
     background-color: cornflowerblue;
     color:darkblue;
 }
-/* div > input{
+div > input{
     background-color:darkgray;
-} */
+}
+input[type="text"]{
+    color:red;
+}
+input[type="password"]{
+    color: green;
+}
+input[type]{
+    background-color: ghostwhite;
+}
+div[id="myId"]{
+    color:green
+}
+/* #myId p{
+    color:green;
+ } */
