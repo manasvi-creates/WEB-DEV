@@ -49,3 +49,13 @@ div[id="myId"]{
 /* #myId p{
     color:green;
  } */
+  button:hover{
+    background-color: black;
+    color:white;
+  }
+  h3:hover{
+    text-decoration: none;
+  }
+  button:active{
+    background-color:hotpink;
+  }
