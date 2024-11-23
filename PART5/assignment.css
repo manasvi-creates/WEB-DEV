@@ -1,0 +1,30 @@
+#conatiner{
+    /* height: 350px;
+    width: 350px;
+    border: 2px solid rgb(30, 176, 176);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center; */
+    height: 400px;
+    width: 400px;
+    border: 3px solid rgb(30, 176, 176);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    background-color: grey;
+    margin: 10px;
+}
