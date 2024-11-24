@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="grid.css">
+    <style>
+        .container{
+            height:300px;
+            width:600px;
+            background-color: rgb(4, 94, 13);
+            display: inline-grid;
+            /* grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px ; */
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:10px;
+            justify-items: end;
+        }
+        .item{
+            height: 50px;
+            width: 80px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            text-align: center;
+        }
+        body{
+            background-color: rgb(181, 213, 21);
+        }
+        h1{
+            color: green;
+        }
+        h3{
+            color: brown;
+        }
+        .one{
+            justify-self: start;
+        }
+        .two{
+            justify-self: end;
+        }
+    </style>
 </head>
 <body>
-    <h1>Grid playground</h1>
+    <h1>Grid Playground</h1>
+    <h3>jutify-items/self(horizontal)</h1>
+    <h3>align-items/self(vertical)</h2>
     <div class="container">
-        <div class=" item one">1</div>
+        <div class="item one ">1</div>
         <div class="item two">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
+        
     </div>
+    this is a span
     
 </body>
 </html>
