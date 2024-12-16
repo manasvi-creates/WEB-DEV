@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Public Administration Department</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .navbar {
+        /* background-color: #1d232c; */
+        background: linear-gradient(100deg, #181928, #1d232c, #02050b);
+      }
+      .navbar a {
+        color: white !important;
+      }
+      .hero-section {
+        background: linear-gradient(100deg, #181928, #1d232c, #02050b);
+        height: 100vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero-section h1 {
+        font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid white;
+            animation: typing 5s steps(30, end) infinite alternate, blink 0.7s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        .notices li {
+            margin-bottom: 10px;
+        }
+        
+        #academics {
+            background-color: #e2e8f0;
+            color: #1d232c;
+            padding: 50px 0;
+        }
+        #academics .card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        #academics .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        #academics .btn-capsule {
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        #academics .btn-capsule:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        #notices {
+            background-color: #edf2f7;
+            color: #1d232c;
+            padding: 50px 0;
+        }
+        #contact {
+            background-color: #e2e8f0;
+            color: #1d232c;
+            padding: 50px 0;
+        }
+        .pyq, .syl {
+            display: flex;
+            justify-content: center;
+        }
+        .container h2 {
+            text-align: center;
+            margin: 30px;
+        }
+        :root {
+  --background-light: #ffffff;
+  --text-light: #000000;
+  --background-dark: #1e1e2f;
+  --text-dark: #ffffff;
+}
+
+body.light-theme {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+body.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+/* 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+} */
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #6200ea;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+        
+       
+      
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Public Administration</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#academics">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#notices">Notices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button id="theme-toggle">Toggle Theme</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1>Welcome to the Department of Public Administration</h1>
+    </div>
+    
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          The Department of Public Administration is committed to preparing
+          students for a career in public service. We focus on equipping future
+          leaders with the skills to address complex policy and administrative
+          challenges.
+        </p>
+      </div>
+    </section>
+      <!-- Academics Section -->
+<section id="academics" class="py-5 bg-light">
+  <div class="container">
+      <h2>Academics</h2>
+      <div class="row">
+          <!-- Previous Year Question Papers -->
+          <div class="col-md-4 pyq">
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Previous Year Question Papers</h5>
+                      <p class="card-text">Access a comprehensive collection of previous year question papers to help you prepare for exams.</p>
+                      <a href="#" class="btn btn-primary btn-capsule">View Papers</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Notifications -->
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Notifications</h5>
+                      <div class="alert alert-info" role="alert">
+                          <strong>New!</strong> Exam Schedule Released.
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                          <strong>Reminder!</strong> Seminar on Policy Making on 2024-12-22.
+                      </div>
+                      <a href="#" class="btn btn-primary btn-capsule">View All Notifications</a>
+                  </div>
+              </div>
+          </div>
+          <!-- Syllabus -->
+          <div class="col-md-4 syl">
+              <div class="card mb-4 shadow-sm">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Syllabus</h5>
+                      <p class="card-text">Explore the detailed syllabus for undergraduate and postgraduate programs.</p>
+                      <a href="#" class="btn btn-primary btn-capsule">View Syllabus</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Notices Section -->
+<section id="notices" class="py-5">
+  <div class="container">
+      <h2>Latest Notices</h2>
+      <ul class="notices" id="notice-list"></ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: publicadmin@university.edu</p>
+      <p>Phone: +1-234-567-890</p>
+      <div id="map" style="height: 300px; width: 100%;"></div>
+  </div>
+</section>
+   
+           
+ 
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+      <p>
+        &copy; 2024 Department of Public Administration. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // Dynamic Notices
+      const notices = [
+        { title: "Exam Schedule Released", date: "2024-12-20" },
+        { title: "Seminar on Policy Making", date: "2024-12-22" },
+      ];
+
+      const noticeList = document.getElementById("notice-list");
+      notices.forEach((notice) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${notice.title}</strong> - ${notice.date}`;
+        noticeList.appendChild(li);
+      });
+
+      // Example Google Maps Integration (Replace with actual API key)
+      function initMap() {
+        const location = { lat: 40.73061, lng: -73.935242 }; // Example coordinates
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: location,
+        });
+        new google.maps.Marker({ position: location, map: map });
+      }
+      // Select the theme toggle button
+const themeToggle = document.getElementById('theme-toggle');
+
+// Check for saved theme in localStorage
+const savedTheme = localStorage.getItem('theme') || 'light-theme';
+document.body.classList.add(savedTheme);
+
+// Toggle theme on button click
+themeToggle.addEventListener('click', () => {
+  if (document.body.classList.contains('light-theme')) {
+    document.body.classList.replace('light-theme', 'dark-theme');
+    localStorage.setItem('theme', 'dark-theme');
+  } else {
+    document.body.classList.replace('dark-theme', 'light-theme');
+    localStorage.setItem('theme', 'light-theme');
+  }
+});
+
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
